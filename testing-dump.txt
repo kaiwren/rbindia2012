@@ -1,0 +1,63 @@
+* Testing isn't about regression testing
+* You always run just one test, not the entire suite, or you're doing it wrong
+* TDD makes you faster. If it doesn't, either you don't know enough about what you're doing to test first, or you have bad code.
+* Unit Tests are meant to test just one thing.
+* Extrapolation: Large tests usually test more than one thing
+* Lots of changes in a test file reflect high change in requirements in the corresponding code or lots of defects
+* Implementation bound tests
+* The BDD religion is stupid
+* Cucumber isn't TDD
+* Cucumber is just one part of BDD
+* Testing is about testing and design is a side effect
+* The word "Testing" is all that get focus (which is why the BDD guys picked "Behaviour") - don't obsess over the "test" in testing
+* All untested code is legacy code
+* Code that's hard to test is poorly factored
+* Untested code is hard/scary to change
+* TDD forces your code into units, usually leading to looser coupling
+* Slow test suites are run less often
+* Being able to run one test, all tests in file, and the full test suite quickly and effectively from your dev environment is critical
+* Too much data setup in a test is a smell
+* Too many factories are also a smell (but a lesser one)
+* If there is a one-is-to-one correlation between test files and classes (which there should be), long test files indicate a class that's doing too much
+* Tests are all about feedback, and slow feedback == no feedback - your builds should either be quick or have stages
+* Cucumber is a bad place to start TDD
+* All code is testable. Start with tests on any non-trivial codebase. Yes, js, we're looking at you.
+* Some tests are best written as browser/UI tests.
+* Know when you're writing an integration test
+* Nomenclature - establish/clarify functional/integration/UI/unit
+* Tests validate your requirement
+* Tests should document your requirements
+* Tests should replace comments
+* Use a different word if that helps with remembering that theres more to tests than regression testing (spec?)
+* What it is regression testing
+* Tests always have one code path (or, quis custodiet ipsos coustodes)
+* Tests don't have abstractions (usually)
+* DRYing tests is always about removing syntactic duplication, never abstraction duplication
+* Premature DRYing of tests can cause pains in the ass
+* No interdependence among tests (run tests in any order, with any subset of tests)
+* Red-Green-Refactor
+* Red-Green-Commit-Refactor-Green-Commit
+* Its ok to not name a test upfront - name it after you've figured out what you're doing
+* TDD is not a tool, it's a way of thinking about code that keeps what you need to hold in your head to a minimum
+* Progressive deepening and widening
+* Mocks help
+* Mocks can keel you
+* any_instance in rspec is an antipattern. I wrote it. :P
+* Always green vs. Backtracking 
+* Don't test the obvious every single time
+* Testing APIs is about verifying adherence to the RFC as much as anything else - use rspec_http
+* Test after is stupid.
+
+
+Test code smells
+* The long test file
+* The test with too many assertions
+* The test that cannot fail
+* The test that has logic
+* The implementation bound test
+* The test with arcane terminology
+* The test that verifies program flow
+* The slow test
+* The test that has complex setup
+* The test that shows high churn
+* The test file that shows high churn
